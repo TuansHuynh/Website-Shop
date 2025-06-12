@@ -1,0 +1,22 @@
+@use '../../assets/style/global.scss' as *;
+
+.logo {
+
+    a {
+        width: fit-content;
+        background-color: red;
+        color: $text-color;
+        padding: 10px;
+        text-decoration: none;  
+        font-size: 18px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            border-radius: 15px;
+        }
+    }
+
+}
