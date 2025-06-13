@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom';
 // import { Navigate } from 'react-router-dom';
-// import { useStateContext } from '../contexts/ContextProvider';
+// import { useStateContext } from '../context/ContextProvider';
 
 export default function GuestLayout() {
 

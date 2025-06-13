@@ -1,0 +1,82 @@
+@use '../../assets/style/global.scss' as *;
+
+.home {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px;
+    gap: 10px;
+    font-family: 'Poppins', sans-serif;
+
+    .home__container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        flex: 2;
+        gap: 10px;
+
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+            li {
+                display: flex;
+                justify-content: center;
+                list-style-type: none;
+                border: 1px solid #000000;
+                border-radius: 15px;
+                gap: 10px;
+
+                .product {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    padding: 10px;
+
+                    img {
+                        width: 250px;
+                        border-radius: 10px;
+                        padding: 10px;
+                    }
+
+                    // .name__product {}
+
+                    .name__product,
+                    .price,
+                    .price__discount {
+                        border-radius: 5px;
+                        margin-left: 20px;
+                        padding: 5px;
+                    }
+
+                    .price {
+                        text-decoration: line-through;
+                    }
+
+                    .price__discount {
+                        color: red;
+
+                    }
+
+                    button {
+                        position: relative;
+                        border: none;
+                        width: fit-content;
+                        background-color: #ffffff;
+                        cursor: pointer;
+                        margin: -38px 0 0 167px;
+                        padding: 6px;
+                        border-radius: 10px;
+                        cursor: pointer;
+
+                        &:hover {
+                            background-color: #32d4f15f;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}

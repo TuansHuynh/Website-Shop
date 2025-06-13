@@ -1,11 +1,13 @@
+import '../assets/style/App.scss'
 import { Outlet } from "react-router-dom";
-// import { Navigate } from "react-router-dom";
-// import { useStateContext } from "../contexts/ContextProvider";
 import Navbar from "../component/layout/Navbar";
 import Footer from "../component/layout/Footer";
+import MenuBar from "../component/layout/MenuBar";
+// import { Navigate } from "react-router-dom";
+// import { useStateContext } from "../context/ContextProvider";
 
-export default function DefaultLayout(){
-    // const {token} = useStateContext()
+export default function DefaultLayout() {
+    // const {token} = useStateContext();
 
     // if(!token){
     //     return <Navigate to='/login' />
@@ -13,13 +15,17 @@ export default function DefaultLayout(){
 
     return (
         <div>
-            <Navbar/>
+            <Navbar />
+            <div className="menu__bar">
+                <div>
+                    <MenuBar />
+                </div>
+                <div>
+                    <Outlet />
+                </div>
+            </div>
 
-            <main>
-                <Outlet/>
-            </main>
-
-            <Footer/>
+            <Footer />
         </div>
     )
 }

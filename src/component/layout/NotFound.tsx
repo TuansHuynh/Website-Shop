@@ -1,9 +1,12 @@
-function NotFound(){
+import '../style/notfound.scss'
+
+function NotFound() {
     return (
-        <div>
-            Error 404: Page Not found
+        <div className="notfound">
+            Error 404: Page Not Found
         </div>
-    )
+    );
 }
+
 
 export default NotFound;

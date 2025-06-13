@@ -3,8 +3,8 @@ import '../style/footer.scss'
 
 export default function Footer() {
     return (
-        <footer className="bg-gray-800 text-white py-4">
-            <div className="container mx-auto text-center">
+        <div className="footer">
+            <div className="footer_container">
                 <p>&copy; {new Date().getFullYear()} My Application</p>
                 <div>
                     <LinkTargetBlank to='https://www.facebook.com/tuans.huynh.174'>Facebook</LinkTargetBlank>
@@ -16,6 +16,6 @@ export default function Footer() {
                     <a href="/terms-of-service" className="">Terms of Service</a>
                 </div>
             </div>
-        </footer>
+        </div>
     );
 }
