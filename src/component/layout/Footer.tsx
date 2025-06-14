@@ -8,7 +8,7 @@ export default function Footer() {
                 <p>&copy; {new Date().getFullYear()} My Application</p>
                 <div>
                     <LinkTargetBlank to='https://www.facebook.com/tuans.huynh.174'>Facebook</LinkTargetBlank>
-                    <LinkTargetBlank to='https://github.com/TuansHuynh'>Github</LinkTargetBlank>
+                    <LinkTargetBlank to='https://github.com/TuansHuynh/Website-Shop'>Github</LinkTargetBlank>
                     <LinkTargetBlank to='https://www.linkedin.com/'>LinedkIn</LinkTargetBlank>
                 </div>
                 <div>

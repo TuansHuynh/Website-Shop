@@ -1,11 +1,13 @@
 export interface ListProduct {
     id: number;
     nameProduct: string;
-    list: Products[]; // Gợi ý: nếu `list` là mảng sản phẩm
+    list: Products[];
 }
 
 export interface Products {
     id: string;
+    category: string,
+    group: string,
     name: string;
     image: string;
     price: number;

@@ -1,35 +1,45 @@
 import './home.scss'
-import { listProduct, product } from '../../assets/data/Data'
 import type { Products } from '../../types/Type'
 import { formatCurrency } from '../../utils/format'
-import type { ListProduct } from '../../types/Type';
+import { listProduct, } from '../../assets/data/Data'
 
 export default function Home() {
     return (
         <div className="home">
-            <div className="category__list">
-                {listProduct.map((item: ListProduct) => (
-                    <p key={item.id}>{item.nameProduct}</p>
-                ))}
-            </div>
             <div className="home__container">
-                {product.map((product: Products) => (
-                    <ul>
-                        <li>
-                            <div className='product'>
-                                <img src={product.image} />
-                                <p className='name__product'>{product.name}</p>
-                                <p className="price">
-                                    <span>{formatCurrency(product.price, 'VND')}</span>
-                                </p>
-                                <p className="price__discount">
-                                    <span>{formatCurrency(product.priceDiscount, 'VND')}</span>
-                                </p>
-                                <button className='add_to_cart'>Add To Cart</button>
-                            </div>
-                        </li>
-                    </ul>
+                {listProduct.map((category) => (
+                    <div key={category.id} className="category__block">
+
+                        <div className='category__product__name'>{category.nameProduct}</div>
+
+                        <div className="category__products">
+
+                            {category.list.map((product: Products) => (
+                                <div key={product.id} className='product'>
+
+                                    <img src={product.image} />
+
+                                    <div className='name__product'>{product.name}</div>
+
+                                    <div className="price">
+                                        <span>{formatCurrency(product.price, 'VND')}</span>
+                                    </div>
+
+                                    <div className="price__discount">
+                                        <span>{formatCurrency(product.priceDiscount, 'VND')}</span>
+                                    </div>
+
+                                    <button className='add_to_cart'>Add To Cart</button>
+
+                                </div>
+                            ))}
+
+                        </div>
+
+                    </div>
+
                 ))}
+
             </div>
         </div>
     )
