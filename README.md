@@ -63,7 +63,7 @@ npm i
 ```
 to install node_modules
 
-If you want to run this project, must must:
+If you want to run this project, you must:
 ```js
 npm run dev
 ```
