@@ -1,88 +1,13 @@
 @use '../../assets/style/global.scss' as *;
 
 .home {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 10px;
-    gap: 10px;
-    font-family: 'Poppins', sans-serif;
-
-    .home__container {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        flex: 2;
-        gap: 10px;
-
-        ul {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            li {
-                display: flex;
-                justify-content: center;
-                list-style-type: none;
-                border: 1px solid #000000;
-                border-radius: 15px;
-                gap: 10px;
-
-                .product {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 10px;
-                    padding: 10px;
-
-                    img {
-                        width: 250px;
-                        border-radius: 10px;
-                        padding: 10px;
-                    }
-
-                    .name__product,
-                    .price,
-                    .price__discount {
-                        border-radius: 5px;
-                        margin-left: 20px;
-                        padding: 5px;
-                    }
-
-                    .price {
-                        text-decoration: line-through;
-                    }
-
-                    .price__discount {
-                        color: red;
-                    }
-
-                    button {
-                        position: relative;
-                        border: none;
-                        width: fit-content;
-                        background-color: #ffffff;
-                        cursor: pointer;
-                        margin: -38px 0 0 167px;
-                        padding: 6px;
-                        border-radius: 10px;
-                        cursor: pointer;
-
-                        &:hover {
-                            background-color: #32d4f15f;
-                        }
-                    }
-
-                }
-            }
-        }
-    }
-}
-
-.home {
 
     .home__container {
         display: flex;
         flex-direction: column;
-
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        font-weight: 600;
 
         .category__block {
             display: flex;
@@ -90,10 +15,18 @@
 
             .category__product__name{
                 display: flex;
-                // justify-content: center;
-                margin: 20px;
+                margin: 15px 0 10px 20px;
                 font-size: 25px;
 
+                .link_category{
+                    color: #a7a7a7;
+                    text-decoration: none;
+                    transition: all 0.2s ease-in-out;
+
+                    &:hover{
+                        color: #454545;
+                    }
+                }
             }
 
             .category__products {

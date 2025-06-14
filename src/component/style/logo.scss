@@ -3,19 +3,21 @@
 .logo {
 
     a {
-        width: fit-content;
-        background-color: red;
-        color: $text-color;
-        padding: 10px;
-        text-decoration: none;  
+        text-decoration: none;
         font-size: 18px;
         font-family: 'Roboto', sans-serif;
         font-weight: 600;
+        color: $text-color;
+        background-color: rgb(255, 207, 207);
+        border-radius: 5px;
+        width: fit-content;
+        padding: 10px;
         cursor: pointer;
         transition: all 0.3s ease-in-out;
 
         &:hover {
             border-radius: 15px;
+            background-color: rgb(255, 178, 178);
         }
     }
 

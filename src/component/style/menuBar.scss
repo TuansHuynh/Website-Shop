@@ -1,9 +1,66 @@
 @use '../../assets/style/global.scss' as *;
 
-.menu_bar{
-    position: fixed;
-    margin-left: 10px;
-    gap: 10px;
-    width: 100px;
-    background-color: rgb(160, 160, 160);
+.menuBar {
+    display: flex;
+    padding-bottom: 10px;
+
+    .logo{
+        display: flex;
+        align-items: center;
+        background-color: rgb(255, 155, 155);
+        height: fit-content;
+        border-radius: 5px;
+        margin-left: 3px;
+        padding: 5px;
+
+        img{
+            width: 20px;
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+
+            &:hover{
+                transform: rotate(90deg);
+            }
+        }
+    }
+
+    .menu_bar{
+        display: none;
+        transform: translateX(-120px);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .active {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        gap: 10px;
+        width: 120px;
+        height: fit-content;
+        background-color: rgb(255, 155, 155);
+        transition: all 0.3s ease-in-out;
+        transform: translateX(-5px);
+        border-radius: 6px;
+
+        .link {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            font-size: 20px;
+            font-family: "Roboto", sans-serif;
+            font-weight: 600;
+            color: #000000;
+            background-color: rgb(255, 174, 174);
+            margin: 5px 5px;
+            padding: 5px 10px;
+            gap: 10px;
+            transition: all 0.2s ease-in-out;
+
+            &:hover {
+                background-color: rgb(255, 232, 232);
+                border-radius: 5px;
+                transform: translateY(-3px);
+            }
+        }
+    }
 }

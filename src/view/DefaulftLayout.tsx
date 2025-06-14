@@ -14,18 +14,23 @@ export default function DefaultLayout() {
     // }
 
     return (
-        <div>
-            <Navbar />
 
-            <div>
-                <MenuBar />
+    <div>
+        <Navbar />
+
+
+        <div className='content_container'>
+
+            <MenuBar />
+
+            <div className='container_menu_bar'>
+                <div className="menu__bar">
+                    <Outlet />
+                </div>
             </div>
-
-            <div className="menu__bar">
-                <Outlet />
-            </div>
-
-            <Footer />
         </div>
+
+        <Footer />
+    </div>
     )
 }

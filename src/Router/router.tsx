@@ -9,6 +9,7 @@ import Phone          from "../page/product/phone/Phone";
 import Laptop         from "../page/product/laptop/Laptop";
 import Cart           from "../page/cart/Cart";
 import UserProfile    from "../page/user/UserProfile";
+import ProductByName  from "../component/ui/ProductByName";
 
 const router = createBrowserRouter([
     {
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
                 path: '/user',
                 element: <UserProfile/>
             },
+            {
+                path: "/product/:name",
+                element: <ProductByName />,
+            },
         ]
     },
     {
@@ -58,7 +63,7 @@ const router = createBrowserRouter([
     {
         path: '*',
         element: <NotFound />
-    }
+    },
 ])
 
 export default router;

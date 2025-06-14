@@ -49,5 +49,9 @@ export const product: Products[] = [
 
 export const listProduct: ListProduct[] = [
     createListProduct(1, 'Smartphone', product.filter(p => p.group === 'Smartphone')),
+    createListProduct(2, 'Laptop', product.filter(p => p.group === 'Laptop')),
 ];
 
+export const groupList: string[] = Array.from(
+    new Set(product.map(p => p.group))
+);
