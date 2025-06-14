@@ -1,4 +1,4 @@
-# React + TypeScript + Vite
+<!-- # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
@@ -51,9 +51,19 @@ export default tseslint.config({
     ...reactDom.configs.recommended.rules,
   },
 })
-```
+``` -->
 
 Before you run project, you must:
+```js
+npm install
+```
+or: 
+```js
+npm i
+```
+to install node_modules
+
+If you want to run this project, must must:
 ```js
 npm run dev
 ```
