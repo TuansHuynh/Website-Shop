@@ -2,7 +2,7 @@ import '../assets/style/App.scss'
 import { Outlet } from "react-router-dom";
 import Navbar from "../component/layout/Navbar";
 import Footer from "../component/layout/Footer";
-// import MenuBar from "../component/layout/MenuBar";
+import MenuBar from "../component/layout/MenuBar";
 // import { Navigate } from "react-router-dom";
 // import { useStateContext } from "../context/ContextProvider";
 
