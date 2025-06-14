@@ -52,3 +52,8 @@ export default tseslint.config({
   },
 })
 ```
+
+Before you run project, you must:
+```js
+npm run dev
+```
